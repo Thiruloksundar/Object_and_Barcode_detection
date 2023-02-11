@@ -9,6 +9,7 @@ from HSV_Contours import hsv_seg, contours
 red = (255,0,0)
 blue = (0,0,255)
 yellow = (255, 255,0)
+black = (0,0,0)
 
 def run(image_path, bardet, draw_all_objects=False):
 
@@ -38,7 +39,7 @@ def run(image_path, bardet, draw_all_objects=False):
                 if hullarea/area > 1.3:
                     cv2.putText(result, 'Multiple Objects', (x1,y1), cv2.FONT_HERSHEY_SIMPLEX,5, (255,255,255), 10, cv2.LINE_AA)
 
-                result = cv2.rectangle(result, (x1,y1), (x2,y2), red, 20)
+                result = cv2.rectangle(result, (x1,y1), (x2,y2), black, 20)
                 
             # Checking barcodes detected by OpenCV
             if detections is None:
