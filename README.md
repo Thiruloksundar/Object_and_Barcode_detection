@@ -43,7 +43,7 @@ The result of the pretrained yolov4 model was
 It didn't give good results since the model wasn't finetuned for grocery item detection. I didn't try finetuning deep learning models due to high gpu requirements.
 
 ## Current Implementation
-Finally, I decided to use HSV segementation and Canny edge detection techniques to detect items in the image and send the cropped items as an input to the barcode scanner. I used OpenCV's inbuilt barcode detector and decoder this time since it was easier to implement and has a good accuracy. To run the final implementation you can clone my repo and run the final.py or add the HSV_contours.py, utils and final.py codes to your working directory and execute it on your machine.
+Finally, I decided to use HSV segementation and Canny edge detection techniques to detect items in the image and send the cropped items as an input to the barcode scanner. I used OpenCV's inbuilt barcode detector and decoder this time since it is easier to implement and has a good accuracy. To run the final implementation you can clone my repo and run the final.py or add the HSV_contours.py, utils and final.py codes to your working directory and execute it on your machine.
 The final results are
 ![r_4](https://user-images.githubusercontent.com/95955774/218244291-dfb9f344-184b-4835-a826-ddd149100a47.jpg)
 
